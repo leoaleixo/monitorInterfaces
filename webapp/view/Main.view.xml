@@ -1,0 +1,33 @@
+<mvc:View
+    controllerName="vc.monitor.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+    <Page
+        id="page"
+        title="{i18n>title}"
+    >
+        <content>
+            <HBox
+                id="_IDGenHBox1"
+                alignContent="Center"
+            >
+                <GenericTile
+                    id="_IDGenGenericTile1"
+                    press="navigateForward('Dashboard')"
+                    class="sapUiSmallMarginBegin sapUiSmallMarginTop tileLayout"
+                    header="Gestão de Pátio"
+                >
+                    <TileContent
+                        id="_IDGenTileContent1"
+                        footerColor="Critical"
+                        unit="Integrações Ativas"
+                    >
+                    <NumericContent id="_IDGenNumericContent1" value="{CountSet>/QtdInterface}" valueColor="Critical" indicator="None"/>
+                    </TileContent>
+                </GenericTile>
+            </HBox>
+        </content>
+    </Page>
+</mvc:View>

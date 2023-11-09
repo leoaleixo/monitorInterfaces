@@ -1,0 +1,44 @@
+<mvc:View
+    controllerName="vc.monitor.controller.Detail"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+    <Page
+        id="page"
+        title="Parametros"
+    >
+        <content>
+
+            <Table id="Table1" items="{/GravaParametrosInterfaceSet}">
+                <columns>
+                    <Column id="Column1">
+                        <Label id="Label1" text="Url"></Label>
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem id="ColumnListItem1">
+                        <cells>
+                            <Text id="Text1" text="{Param}"></Text>
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+
+            <Label
+                id="_IDGenLabel1"
+                text="Configurar Nova URL"
+                labelFor="_IDGenInput1"
+            />
+            <Input
+                id="_IDGenInput1"
+                placeholder="Entrar URL para consulta"
+            />
+            <Button
+                id="_IDGenButton1"
+                text="Salvar"
+                press="save"
+            />
+        </content>
+    </Page>
+</mvc:View>

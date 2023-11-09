@@ -1,0 +1,28 @@
+<mvc:View
+    controllerName="vc.monitor.controller.Dashboard"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+    <Page
+        id="page"
+        title="Dashboard"
+    >
+        <content>
+            <HBox
+                id="_IDGenHBox1"
+                alignContent="Center"
+            >
+                <GenericTile
+                    id="_IDGenGenericTile1"
+                    press="navigateForward1('Dashboard')"
+                    class="sapUiSmallMarginBegin sapUiSmallMarginTop tileLayout"
+                    header="Dashboard"
+                >
+
+                </GenericTile>
+            
+            </HBox>
+        </content>
+    </Page>
+</mvc:View>
